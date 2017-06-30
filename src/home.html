@@ -1,0 +1,19 @@
+<template>
+    <div>
+        <div>
+            <label for="baseUrl">Base URL: </label>
+            <input type="text" id="baseUrl" value.bind="baseUrl" class="form-control">
+        </div>
+        <div>
+            <label for="route">Route: </label>
+            <input type="text" id="route" value.bind="route" class="form-control">
+        </div>
+        <div>
+            <input type="button" value="HTTP!" click.delegate="getHttp()" class="btn btn-success">
+            <input type="button" value="FETCH!" click.delegate="getFetch()" class="btn btn-success">
+        </div>
+    </div>
+    <div>
+        <div innerhtml.bind="apiResponse"></div>
+    </div>
+</template>
